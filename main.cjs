@@ -6,11 +6,10 @@ function createWindow() {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      contentSecurityPolicy: "script-src 'self' file:///C:/projects/cool-video/dist/assets/index-dac40a44.js"
     }
   });
 
-  win.loadURL(`file://${path.join(__dirname, 'dist/index.html')}`);
+  win.loadURL('dist/index.html');
 }
 
 
